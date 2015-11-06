@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+  
+    
+    <style name="App_Theme" parent="@android:style/Theme.Holo">
+   <item name="android:editTextStyle">@drawable/rounded_edittext</item>
+</style>
+
+</resources>
+<!-- AppBaseTheme -->

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical"
+        android:weightSum="9.3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/top_bar"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="MY PROGRESS"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RR5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="47dp" >
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="10"
+                    android:hint="Enter Your Name"
+                    android:inputType="textCapWords"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/ok"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/user"
+                    android:text="SAVE"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+               android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/key_word_bg"
+                android:gravity="center"
+                android:text="Welcome Anonymous"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="Stage"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/stage"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/te"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="Movie Bucks Left"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/bucks"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/stage"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+                 <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/te"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="Total Time Taken"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bucks"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/key_word_bg"
+                    android:gravity="center"
+                    android:text="00:00:00"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adds"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/adds"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</ScrollView>

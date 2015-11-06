@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:id="@+id/RR3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.5" >
+
+       
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/edittext_play"
+            android:text="Play"
+             android:textSize="25dp"
+             
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/topScorers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+             android:textSize="25dp"
+              android:textStyle="bold"
+             android:textColor="#FFFFFF"
+             android:background="@drawable/edittext_list"
+            android:text="See Top 10 List" />
+
+        <Button
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_below="@+id/topScorers"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+             android:textSize="25dp"
+              android:textStyle="bold"
+             android:textColor="#FFFFFF"
+             android:background="@drawable/edittext_progress"
+            android:text="See Your Progress" />
+         <Button
+            android:id="@+id/bucks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progress"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="12dp"
+             android:background="@drawable/edittext_bucks"
+            android:text="Purchase Bucks" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="60dp"
+             android:textColor="#ffffff"
+             android:padding="12dp"
+             android:background="@drawable/edittext2"
+             android:textSize="25dp"
+             android:text="GROOVE MOVIE QUOTES" />
+       
+    </RelativeLayout>
+    
+      <LinearLayout
+            android:id="@+id/adds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_weight="0.5"
+          
+            
+            android:orientation="horizontal">
+           
+            
+        </LinearLayout>
+
+</LinearLayout>
